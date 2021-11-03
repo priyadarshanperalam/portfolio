@@ -1,0 +1,51 @@
+.primary-nav {
+	padding-top: 10px;
+	@mixin atMedium {
+		padding-top: 0;
+	}
+	&__pull-right {
+		@mixin atMedium {
+			float: right;
+		}
+	}
+	& > ul {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+		@mixin clearfix{}
+		& > li {
+			list-style: none;
+			@mixin atMedium {
+				float: left;
+				display: block;
+				padding-right: 20px;
+			}
+			& > a {
+				text-decoration: none;
+				display: block;
+				font-weight: 300;
+				color: #4a4a4a;
+				-webkit-font-smoothing: subpixel-antialiased;
+				padding: 5px 8px;
+				font-size: .875rem;
+				background-color: rgb(249 249 249 / 55%);
+				margin: 8px;
+				@mixin atMedium {
+					font-size: .8175rem;
+					padding: 12px 0;
+					transition: padding .3s ease-out;
+					background-color: transparent;
+				}
+				&.is-current-link {
+					font-weight: 500;
+				}
+			}
+			&:last-child {
+				padding-right: 0;
+				@mixin atMedium {
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}

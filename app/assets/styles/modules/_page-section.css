@@ -1,9 +1,8 @@
 .page-section {
-	padding:  1.2rem 0;
+	padding: 3rem 0;
 	@mixin atMedium {
-		padding: 4.5rem 0;
+		padding: 1.5rem 0;
 	}
-	padding: 4.5rem 0;
 
 	&__blue {
 		background-color: $mainBlue;
@@ -24,5 +23,24 @@
 		@mixin atLarge {
 			padding-bottom: 4.5rem;
 		}
+	}
+	&__profile {
+		display: flex;
+		display: flex;
+    background-color: #ffcc00;
+    color: #4a4a4a;
+		@mixin atMedium {
+			padding-top: 5rem;
+		}
+	}
+	&__tech {
+		background: #fffaeb;
+	}
+
+	&__projects {
+		display: flex;
+	}
+	&__experience {
+
 	}
 }

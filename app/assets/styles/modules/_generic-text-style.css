@@ -1,0 +1,181 @@
+
+.generic-text-style {
+	-webkit-font-smoothing: subpixel-antialiased;
+	&__intro {
+		text-indent: 40px;
+		line-height: 1.4;
+    font-style: italic;
+    font-weight: 300;
+		line-height: 1.6;
+    max-width: 800px;
+	}
+	&__salute {
+		font-weight: 100;
+    margin-bottom: 0px;
+		font-size: .8rem;
+		font-family: Zapfino;;
+		@mixin atMedium {
+			font-size: 1.2rem;
+		}
+	}
+	&__name {
+		font-weight: 400;
+    font-size: 1.6rem;
+    font-family: Zapfino;
+		@mixin atMedium {
+			font-size: 2.2rem;
+		}
+	}
+	&__header {
+		text-align: center;
+		font-size: 1.4rem;
+    font-weight: 400;
+	}
+	&__tech {
+		display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 3;
+		padding: 0;
+		> li {
+			flex: 1;
+			list-style: none;
+			min-width: 18%;
+    	max-width: 18%;
+			background-color: #f1f3f1;
+			padding: 15px 10px;
+			border-radius: 8px;
+			margin: 8px 1%;
+			text-align: center;
+			font-weight: 300;
+			line-height: 1.285;
+			color: #2f4464;
+			font-size: .5rem;
+			@mixin atSmall {
+				min-width: 14%;
+    		max-width: 14%;
+				margin: 8px 1.33%;
+				font-size: .8rem;
+			}
+			@mixin atMedium {
+				min-width: 10.5%;
+    		max-width: 10.5%;
+				margin: 8px 1%;
+				font-size: .96rem;
+			}
+		}
+	}
+	&__previous-emp {
+		display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 3;
+		padding: 0;
+		> li {
+			flex: 1;
+			list-style: none;
+			min-width: 48%;
+    	max-width: 48%;
+			background-color: #f1f3f1;
+			padding: 15px 10px;
+			border-radius: 8px;
+			margin: 8px 1%;
+			text-align: center;
+			font-weight: 300;
+			line-height: 1.285;
+			color: #2f4464;
+			@mixin atMedium {
+				min-width: 22%;
+    		max-width: 22%;
+				margin: 8px 1.15%;
+			}
+			h3 {
+				font-size: 1.2rem;
+				margin: 10px auto;
+				font-weight: 500;
+			}
+			p {
+				font-size: 1rem;
+				margin: 4px auto;
+			}
+			span {
+				font-size: .8rem;
+				font-style: italic;
+			}
+		}
+	}
+	&__projects {
+		padding: 0;
+		> li {
+			list-style: none;
+			& > h3 {
+				font-weight: 500;
+				margin: 24px 0 4px;
+				color: #07275a;
+			}
+			& > p {
+				font-size: .68rem;
+				font-weight: 300;
+				line-height: 1;
+				margin: 0;
+				color: #3586ff;
+			}
+			& > div p {
+				> i {
+					font-weight: 300;
+					color: #000000;
+				}
+			}
+		}
+	}
+	&__text-centered {
+		text-align: center;
+	}
+}
+.color-tag {
+	display: inline-block;
+	margin: 2px 4px;
+	border-radius: 4px;
+	padding: 1px 5px;
+	background-color: #f1f3f1;
+	border: 1px solid #e7e7e7;
+	&__html, &__html5 {
+		background-color: #e8fbff;
+	}
+	&__css, &__css3, &__sass, &__less, &__scss {
+		background-color: rgb(127, 255, 238);
+	}
+	&__javascript, &__ajax {
+		background-color: rgb(138 255 169);
+	}
+	&__angular, &__react, &__redux, &__flux {
+		background-color: rgb(204, 215, 255);
+	}
+	&__java, &__maven, &__j2ee {
+		background-color: rgb(255, 234, 209);
+	}
+	&__jquery, &__bootstrap {
+		background-color: rgb(255, 254, 229);
+	}
+	&__all {
+		background-color: rgb(190, 252, 255);
+	}
+	&__node, &__python {
+		background-color: rgb(253, 255, 102);
+	}
+	&__webpack, &__express, &__npm, &__gulp {
+		background-color: rgb(255, 229, 248);
+	}
+	&__git, &__svn {
+		background-color: rgb(246, 255, 195);
+	}
+	&__jira, &__confluence {
+		background-color: rgb(246, 255, 195);
+	}
+	&__mongodb, &__oracle, &__mysql, &__postgresql {
+		background-color: rgb(255, 211, 211);
+	}
+	&__karma, &__jasmin, &__junit  {
+		background-color: rgb(215, 253, 198);
+	}
+}

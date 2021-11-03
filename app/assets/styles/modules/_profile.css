@@ -1,0 +1,85 @@
+.profile {
+	border-bottom: 10px solid $mainBlue;
+	display: grid;
+	grid-template-columns: 1fr;
+
+	&__image {
+		height: 160px;
+		width: 160px;
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		@mixin atMedium {
+			height: 220px;
+			width: 220px;
+		}
+	}
+
+	&__text-content {
+		align-self: center;
+		grid-column: 1;
+		grid-row: 1;
+		padding-top: 60px;
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 300;
+		color: $mainBlue;
+		margin: 0;
+		font-size: 2.4rem;
+
+		@mixin atSmall {
+			font-size: 3.4rem;
+		}
+
+		@mixin atMedium {
+			font-size: 4.5rem;
+		}
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		color: $mainBlue;
+		font-size: 1.5rem;
+
+		@mixin atSmall {
+			font-size: 2.2rem;
+		}
+
+		@mixin atMedium {
+			font-size: 2.4rem;
+			margin: 1.2rem auto;
+		}
+
+		@mixin atLarge {
+			font-size: 2.6rem;
+		}
+	}
+
+	&__description {
+		color: #fff;
+		font-size: 1.1rem;
+		font-weight: 100;
+		text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 20rem;
+
+		@mixin atSmall {
+			font-size: 2.9rem;
+			max-width: 30rem;
+		}
+
+		@mixin atMedium {
+			font-size: 2.9rem;
+			max-width: 40rem;
+		}
+
+		@mixin atMedium {
+			font-size: 2.9rem;
+			max-width: 45rem;
+		}
+	}
+}
