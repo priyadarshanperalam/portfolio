@@ -130,6 +130,7 @@
 			transform: scale(1);
 		}
 		&&__is-visible {
+			z-index: 1;
 			opacity: 1;
 			transform: scale(1);
 		}

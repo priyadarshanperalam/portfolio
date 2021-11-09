@@ -70,6 +70,8 @@
     align-content: flex-start;
     flex-wrap: wrap;
     flex-grow: 3;
+		justify-content: center;
+    padding: 0;
 		&__image {
 			padding:12px;
 			background-color: #ffffff;
@@ -91,6 +93,7 @@
 			line-height: 1.285;
 			color: #2f4464;
 			overflow: hidden;
+			box-shadow: 2px 2px 9px -4px #afafaf;
 			@mixin atMedium {
 				min-width: 22%;
     		max-width: 22%;

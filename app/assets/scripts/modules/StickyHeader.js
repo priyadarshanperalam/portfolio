@@ -38,7 +38,6 @@ class StickyHeader {
   }
 
   calcSection(el) {
-		console.log('here jhere');
     if (
       window.scrollY + this.browserHeight > el.offsetTop &&
       window.scrollY < el.offsetTop + el.offsetHeight

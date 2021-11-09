@@ -12,6 +12,7 @@ class MobileMenu {
 		this.menuContent.classList.toggle('site-header__menu-content__is-visible');
 		this.siteHeader.classList.toggle('site-header__is-expanded');
 		this.menuIcon.classList.toggle('site-header__menu-icon__close-x');
+		console.log('clicked---');
 	}
 }
 
