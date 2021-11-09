@@ -9,12 +9,15 @@
 
 	&__is-expanded {
     background: linear-gradient(0deg, #ffcc00eb, #ffcc00eb);
+		background: radial-gradient(#ffffff, #aebfcb);
 	}
 
 	@mixin atMedium {	
 		position: fixed;
 		&__dark {
 			background: linear-gradient(0deg, #ffcc00eb, #ffcc00eb);
+			background: radial-gradient(#ffffff, #aebfcb);
+			background: #aebfcb;
 			.primary-nav a {
 				padding: 2px 0;
 			}

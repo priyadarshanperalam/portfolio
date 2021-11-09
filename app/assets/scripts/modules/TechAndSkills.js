@@ -32,7 +32,7 @@ class TechAndSkills {
     ];
     this.techData = [
       { title: "JS", imgSrc: "assets/images/techs/js.png" },
-      { title: "HTMLS5", imgSrc: "assets/images/techs/html5.png" },
+      { title: "HTML5", imgSrc: "assets/images/techs/html5.png" },
       { title: "CSS", imgSrc: "assets/images/techs/css.png" },
       { title: "React", imgSrc: "assets/images/techs/react.png" },
       { title: "Angular", imgSrc: "assets/images/techs/angular.png" },

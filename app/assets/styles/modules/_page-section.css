@@ -28,13 +28,14 @@
 		display: flex;
 		display: flex;
     background-color: #ffcc00;
+		background: radial-gradient(#ffffff, #aebfcb);
     color: #4a4a4a;
 		@mixin atMedium {
 			padding-top: 5rem;
 		}
 	}
 	&__tech {
-		background: #fffaeb;
+		background: #fffdfd;
 	}
 
 	&__projects {
@@ -42,5 +43,16 @@
 	}
 	&__experience {
 
+	}
+	&__bg {
+		position: absolute;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+		img {
+			max-width: 100%;
+			height: auto;
+			position: absolute;
+		}
 	}
 }

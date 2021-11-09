@@ -33,10 +33,10 @@
 	}
 	&__tech {
 		display: flex;
-    align-content: flex-start;
     flex-wrap: wrap;
     flex-grow: 3;
 		padding: 0;
+		justify-content: center;
 		> li {
 			flex: 1;
 			list-style: none;
@@ -70,37 +70,52 @@
     align-content: flex-start;
     flex-wrap: wrap;
     flex-grow: 3;
-		padding: 0;
+		&__image {
+			padding:12px;
+			background-color: #ffffff;
+			img {
+				height: 60px;
+			}
+		}
 		> li {
 			flex: 1;
 			list-style: none;
 			min-width: 48%;
     	max-width: 48%;
 			background-color: #f1f3f1;
-			padding: 15px 10px;
+			padding: 0;
 			border-radius: 8px;
 			margin: 8px 1%;
 			text-align: center;
 			font-weight: 300;
 			line-height: 1.285;
 			color: #2f4464;
+			overflow: hidden;
 			@mixin atMedium {
 				min-width: 22%;
     		max-width: 22%;
 				margin: 8px 1.15%;
 			}
 			h3 {
-				font-size: 1.2rem;
-				margin: 10px auto;
-				font-weight: 500;
+				font-size: 1.1rem;
+				margin: auto;
+				font-weight: 400;
+				background-color: #4a4a4a;
+				padding: 10px 0;
+				color: white;
 			}
 			p {
 				font-size: 1rem;
-				margin: 4px auto;
+				padding: 12px 0;
+				background-color: #aebfcb;
+				margin: 0;
 			}
 			span {
 				font-size: .8rem;
 				font-style: italic;
+				padding: 8px;
+				display: block;
+				color: #3586ff;
 			}
 		}
 	}
@@ -130,6 +145,28 @@
 	}
 	&__text-centered {
 		text-align: center;
+	}
+	&__roles-desc {
+		line-height: 1.2;
+    font-weight: 300;
+		line-height: 1.6;
+    max-width: 800px;
+	}
+	&__role-detail{
+		line-height: 1.2;
+    font-weight: 300;
+		line-height: 1.6;
+    max-width: 800px;
+	}
+	&__contact {
+		ul {
+			list-style: none;
+			font-weight: 400;
+			line-height: 2;
+			strong {
+				font-weight: 600;	
+			}
+		}
 	}
 }
 .color-tag {
