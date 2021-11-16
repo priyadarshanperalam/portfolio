@@ -47,7 +47,7 @@ class TechAndSkills {
       { title: "Github", imgSrc: "assets/images/techs/github.png" },
       { title: "Gitlab", imgSrc: "assets/images/techs/gitlab.png" },
       { title: "Jira", imgSrc: "assets/images/techs/jira.png" },
-      { title: "MongoDB", imgSrc: "assets/images/techs/mongodb.png" },
+      { title: "MongoDB", imgSrc: "assets/images/techs/mongoDB.png" },
       { title: "Node", imgSrc: "assets/images/techs/nodeJs.png" },
       { title: "Photoshop", imgSrc: "assets/images/techs/photoshop.png" },
       { title: "Redux", imgSrc: "assets/images/techs/redux.png" },
